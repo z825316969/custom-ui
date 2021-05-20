@@ -1,26 +1,32 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+
+import Button, { ButtonSize, ButtonType } from './components/Button/button'
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
+        <Button
+          onClick={event => {
+            console.log(`event`, event)
+          }}
+          size={ButtonSize.Larger}
         >
-          Learn React
-        </a>
+          Larger按钮123
+        </Button>
+        <Button disabled>按钮2</Button>
+        <Button btnType={ButtonType.Danger} size={ButtonSize.Small}>
+          按钮3
+        </Button>
+        <Button btnType={ButtonType.Link} disabled>
+          link
+        </Button>
+        <Button btnType={ButtonType.Link} href="www.baidu.com">
+          link baidu
+        </Button>
       </header>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App

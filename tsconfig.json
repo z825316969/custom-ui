@@ -1,26 +1,43 @@
 {
   "compilerOptions": {
-    "target": "es5",
-    "lib": [
-      "dom",
-      "dom.iterable",
-      "esnext"
-    ],
-    "allowJs": true,
-    "skipLibCheck": true,
-    "esModuleInterop": true,
-    "allowSyntheticDefaultImports": true,
-    "strict": true,
-    "forceConsistentCasingInFileNames": true,
-    "noFallthroughCasesInSwitch": true,
+    "baseUrl": ".",
     "module": "esnext",
+    "target": "es6",
+    "lib": ["es6", "dom", "esnext", "es7", "dom.iterable"],
+    "sourceMap": true,
+    "allowJs": true,
+    "jsx": "react-jsx",
     "moduleResolution": "node",
-    "resolveJsonModule": true,
+    "rootDir": "src",
+    "forceConsistentCasingInFileNames": true,
+    "noImplicitReturns": true,
+    "noImplicitThis": true,
     "isolatedModules": true,
-    "noEmit": true,
-    "jsx": "react-jsx"
+    "noImplicitAny": true,
+    "strict": true,
+    "importHelpers": true,
+    "strictNullChecks": true,
+    "esModuleInterop": true,
+    "suppressImplicitAnyIndexErrors": true,
+    "noUnusedLocals": false,
+    "resolveJsonModule": true,
+    "allowSyntheticDefaultImports": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "skipLibCheck": true,
+    "noFallthroughCasesInSwitch": true,
+    "noEmit": true
   },
-  "include": [
-    "src"
-  ]
+  "exclude": [
+    "node_modules/**/*",
+    "build",
+    "scripts",
+    "acceptance-tests",
+    "webpack",
+    "jest",
+    "src/setupTests.ts",
+    "images.d.ts",
+    "dist"
+  ],
+  "include": ["src/**/*"]
 }
