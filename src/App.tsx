@@ -1,5 +1,5 @@
 import React from 'react'
-
+import { hot } from 'react-hot-loader/root'
 import Button, { ButtonSize, ButtonType } from './components/Button/button'
 
 interface IImgData {
@@ -42,7 +42,7 @@ function App() {
         </Button>
         <Button disabled>按钮2</Button>
         <Button btnType={ButtonType.Danger} size={ButtonSize.Small}>
-          按钮3
+          按钮
         </Button>
         <Button btnType={ButtonType.Link} disabled>
           link
@@ -55,4 +55,4 @@ function App() {
   )
 }
 
-export default App
+export default hot(App)
