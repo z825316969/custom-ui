@@ -1,6 +1,5 @@
 import React from 'react'
 import { hot } from 'react-hot-loader/root'
-
 import Button, { ButtonSize, ButtonType } from './components/Button/button'
 
 interface IImgData {
