@@ -1,3 +1,7 @@
+# 项目描述
+
+用 ts 和 react 仿写的 antd 的 demo 版
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
