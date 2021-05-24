@@ -39,7 +39,7 @@ function App() {
           }}
           size={ButtonSize.Larger}
         >
-          Larger按钮
+          Larger按钮123
         </Button>
         <Button disabled>按钮2</Button>
         <Button btnType={ButtonType.Danger} size={ButtonSize.Small}>
