@@ -43,10 +43,10 @@ function App() {
         </Button>
         <Button disabled>按钮2</Button>
         <Button btnType={ButtonType.Danger} size={ButtonSize.Small}>
-          按钮
+          按钮1
         </Button>
         <Button btnType={ButtonType.Link} disabled>
-          link
+          link1
         </Button>
         <Button btnType={ButtonType.Link} href="www.baidu.com">
           link baidu
