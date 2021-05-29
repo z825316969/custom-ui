@@ -107,7 +107,6 @@
     "@commitlint/cli": "^12.1.4",
     "@commitlint/config-conventional": "^12.1.4",
     "@magicspace/configs": "0.1.46",
-    "husky": "^4.2.3",
     "prettier": "^2.3.0",
     "react-hot-loader": "^4.13.0",
     "tslint": "^6.1.3",
