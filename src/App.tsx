@@ -39,11 +39,11 @@ function App() {
           }}
           size={ButtonSize.Larger}
         >
-          Larger按钮
+          Larger按钮1
         </Button>
         <Button disabled>按钮2</Button>
         <Button btnType={ButtonType.Danger} size={ButtonSize.Small}>
-          按钮
+          按钮1
         </Button>
         <Button btnType={ButtonType.Link} disabled>
           link1
