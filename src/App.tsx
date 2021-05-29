@@ -46,7 +46,7 @@ function App() {
           按钮
         </Button>
         <Button btnType={ButtonType.Link} disabled>
-          link
+          link1
         </Button>
         <Button btnType={ButtonType.Link} href="www.baidu.com">
           link baidu
