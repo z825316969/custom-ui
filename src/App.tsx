@@ -1,6 +1,5 @@
 import React from 'react'
 import { hot } from 'react-hot-loader/root'
-
 import Button, { ButtonSize, ButtonType } from './components/Button/button'
 
 interface IImgData {
@@ -39,14 +38,14 @@ function App() {
           }}
           size={ButtonSize.Larger}
         >
-          Larger按钮123
+          Larger按钮
         </Button>
         <Button disabled>按钮2</Button>
         <Button btnType={ButtonType.Danger} size={ButtonSize.Small}>
-          按钮
+          按钮1
         </Button>
         <Button btnType={ButtonType.Link} disabled>
-          link
+          link1
         </Button>
         <Button btnType={ButtonType.Link} href="www.baidu.com">
           link baidu
