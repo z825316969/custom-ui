@@ -16,7 +16,7 @@ jobs:
           key: ${{ runner.os }}-modules-${{ hashFiles('**/yarn.lock') }}
 
       - name: Branch name
-        run: sh ./.github/workflows/branchName.sh ${GITHUB_REF##*/} ${GITHUB_REF#refs/heads/}
+        run: echo "${GITHUB_REF#refs/heads/}" |grep -q "feature/" && exit 0 || exit 1
 
       #- name: yarn install
       #  run: yarn install
