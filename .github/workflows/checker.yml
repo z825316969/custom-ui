@@ -1,0 +1,25 @@
+name: checker
+on: push
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Git checkout
+        uses: actions/checkout@v2
+
+      - name: cache deps
+        uses: actions/cache@v2
+        with:
+          path: '**/node_modules'
+          key: ${{ runner.os }}-modules-${{ hashFiles('**/yarn.lock') }}
+
+      - name: Branch name
+        run: echo "${GITHUB_REF#refs/heads/}" |grep -q "feature/" && exit 0 || exit 1
+
+      #- name: yarn install
+      #  run: yarn install
+
+      #- name: yarn test
+      #  run: yarn test
