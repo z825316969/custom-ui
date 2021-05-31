@@ -16,7 +16,7 @@ jobs:
           key: ${{ runner.os }}-modules-${{ hashFiles('**/yarn.lock') }}
 
       - name: Branch name
-        run: sh ./.github/workflows/branchName.sh
+        run: sh ./.github/workflows/branchName.sh ${GITHUB_REF##*/}
 
       #- name: yarn install
       #  run: yarn install
