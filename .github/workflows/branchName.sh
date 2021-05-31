@@ -1,7 +1,7 @@
 
 requiredPart="feature/"
 
-result=$(echo $1 | grep "${requiredPart}")
+result=$(echo $2 | grep "${requiredPart}")
 if [[ "$result" != "" ]]
 then
     exit 0
